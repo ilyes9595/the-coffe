@@ -40,6 +40,9 @@ export const MAILER_CONFIG = {
 export const DB_PROVIDER ="DatabaseToken";
 export const USER_PROVIDER ="UserToken";
 export const COFFE_PROVIDER ="CoffeToken";
+export const COMMAND_PROVIDER ="CommandToken";
+export const PAIEMENT_PROVIDER ="PaiementToken";
+
 export const PROFILE_PROVIDER ="ProfileProvider";
 
 

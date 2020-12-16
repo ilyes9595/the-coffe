@@ -6,7 +6,10 @@ export const CoffeSchema = new Schema(
             type: String,
             required: true,
         },
-
+        prix :{
+             type :Number,
+             required : true,
+        }
     }
 );
 
