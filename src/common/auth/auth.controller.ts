@@ -20,7 +20,6 @@ export class AuthController {
     @ApiBadRequestResponse({ description: 'Email and password are required.' })
     @ApiUnauthorizedResponse({ description: 'Invalid credentials.' })
     //#endregion
-
     @UsePipes(new InputValidationPipe)
     async login(
         @Res() res,
