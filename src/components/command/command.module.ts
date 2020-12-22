@@ -6,10 +6,11 @@ import {CoffeProvider} from "../coffe/coffe.provider";
 import {CommandProvider} from "./command.provider";
 import {CommandController} from "./command.controller";
 import {DatabaseModule} from "../../common/database/database.module";
+import {FileUploadService} from "../../common/File/file.service";
 
 @Module({
   imports: [DatabaseModule],
-  providers: [CommandService,...CommandProvider],
+  providers: [CommandService,FileUploadService,...CommandProvider],
   controllers: [CommandController],
   exports: []
 })

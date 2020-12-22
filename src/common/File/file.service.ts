@@ -14,6 +14,7 @@ export class FileUploadService {
         mkdirp.sync(directoryPath);
         // Extract the extension
         // const extension = mime.getExtension(file.mimetype);
+        console.log(file.mimetype)
         const extension = file.mimetype.split("/")[1]
         // Generate file name
         // const name = moment().format('YYYYMMDDHHmmss');
